@@ -88,3 +88,22 @@ color: black;
         grid-template-columns: 1fr;
     }
 }
+
+.home-page {
+    max-width: 1080px;
+    margin: auto;
+    background: #f9f8f8;
+    padding: 10px;
+    height: 1500px;
+}
+
+.Background {
+    background: #ededed;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
