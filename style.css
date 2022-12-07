@@ -112,5 +112,17 @@ color: black;
   .square {
       height: 300px;
       width: 250px;
-      background-color: #555;
+      background-color: #ffffff;
   }
+
+  hr {
+    width:90%;
+    margin:0 auto;
+}
+hr.half-width{
+    width:90%;
+    margin: 0 auto;
+  }
+
+
+
