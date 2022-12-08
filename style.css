@@ -108,10 +108,21 @@ color: black;
     width: 50%;
 }
 
+.nav-items {
+    position: absolute;
+    left: 950px;
+
+}
 
 .square {
     height: 300px;
-    width: 250px;
+    width: 200px;
+    background-color: #ffffff;
+}
+
+.square2 {
+    height: 300px;
+    width: 350px;
     background-color: #ffffff;
 }
 
