@@ -24,7 +24,7 @@
 </head>
 
 <body>
-
+    <!-- Black Bar on Top -->
     <nav>
         <div class="nav-items">
             <!-- <a href="/">Home</a> -->
@@ -49,6 +49,7 @@
         </a>
 
     </nav>
+
     <div class="Background">
         <div class="home-page">
 
@@ -85,26 +86,34 @@
             </div>
 
             <!-- Timer Box -->
-            <div style="position:relative; left:700px; top:-250px;" class="square2">
+            <div style="position:relative; left:700px; top:-280px;" class="square3">
 
-                <a href="">
-                    <img src="Assets/NASCAR_Camping_World_Truck_Series_logo.png" alt="Trucks Rules" style="width:80px;">
-                </a>
+                <div style="position:relative; top:10px;" class="centerpictimer ">
 
+                    <a href="">
+                        <img src="Assets/NASCAR_Camping_World_Truck_Series_logo.png" alt="Trucks Rules"
+                            style="width:80px;">
+                    </a>
 
-                <a href="">
-                    <img src="Assets/NASCAR_Xfinity_Series_logo_2022.png" alt="Xfinity Rules" style="width:80px;">
-                </a>
+                    <a href="">
+                        <img src="Assets/NASCAR_Xfinity_Series_logo_2022.png" alt="Xfinity Rules" style="width:80px;">
+                    </a>
 
-                <a href="">
-                    <img src="Assets/NASCAR_Cup_Series_logo.svg.png" alt="Cup Car Rules" style="width:80px;">
-                </a>
+                    <a href="">
+                        <img src="Assets/NASCAR_Cup_Series_logo.svg.png" alt="Cup Car Rules" style="width:80px;">
+                    </a>
+
+                    <p style="text-align:center">COUNTDOWN TO NEXT RACE</p>
+
+                </div>
+
+                <hr style="border: 3px solid; border-color: rgb(0, 0, 0)" ; class=" counter-width">
 
                 <p class="Timer" id="demo"></p>
 
                 <script>
                     // Set the date we're counting down to
-                    var countDownDate = new Date("dec 20, 2022 15:37:25").getTime();
+                    var countDownDate = new Date("dec 20, 2022 19:30:00").getTime();
 
                     // Update the count down every 1 second
                     var x = setInterval(function () {
