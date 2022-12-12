@@ -1,27 +1,15 @@
 .grid-template-areas {
     display: grid;
-    grid-template:
-        'nav1 nav2 nav3' auto
-}
+    /* position: sticky;
+    top: 0; */
+    grid-template-columns: auto auto auto;
+    /* grid-template:
+        'nav1 nav2 nav3' auto */
+    /* gap: 1000px; */
 
-.nav1 {
-    grid-area: nav1;
-}
-
-
-
-.nav2 {
-    grid-area: nav2;
 
 }
 
-.nav3 {
-    grid-area: nav3;
-}
-
-.logo {
-    grid-area: logo;
-}
 
 nav {
     height: 90px;
