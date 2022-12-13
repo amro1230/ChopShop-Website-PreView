@@ -6,50 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 
 <body>
-    <nav>
-        <div class="nav-items">
-            <!-- <a href="/">Home</a> -->
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
 
+    </div>
 
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
 
-            <a href="/">About</a>
-            <a href="contactus.html">Contact</a>
-            <a href="rulespage.html">Rules</a>
+    <div class="center">
 
-
-
-            <a href="Login.html">
-                <button type="button" class="btn btn-danger">Admin Login </button>
-            </a>
-
-        </div>
-
-
-
-        <a href="index.html">
-            <img src="Assets/c.png" alt="Main logo" style="width:300px;">
-        </a>
-
-
-    </nav>
-
-
-    <img src="Assets/Chop_shop logo.png" style="width:50%">
-    <p>The league is broadcasted via Signature E-sports, and we have our own in-house race control and strict rule book.
-        There is no IRating caps or minimum, but we ask you race others with respect and above all have fun.</p>
+        <img src="Assets/Chop_shop logo.png">
+    </div>
+    <h3>
+        ChopShop Nascar Racing League on iRacing is a competitive and exciting virtual racing league that offers a
+        realistic and thrilling racing experience. With a wide variety of cars, tracks, and events, ChopShop provides
+        the perfect platform for drivers of all skill levels to come together and test their skills against the best in
+        the world. With dedicated servers and a full race calendar, ChopShop is the perfect place to take your racing
+        career to the next level. With an emphasis on friendly competition and camaraderie, ChopShop is the perfect
+        place for racers to have a great time and challenge themselves. Whether you're a veteran or just starting out,
+        ChopShop is the perfect place to find your passion for racing.
+        The league is broadcasted via Signature E-sports, and we have our own in-house race control and strict rule
+        book.
+        There is no IRating caps or minimum, but we ask you race others with respect and above all have fun.</h3>
 </body>
 
 </html>

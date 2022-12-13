@@ -6,19 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contactus.css" />
-    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>contactus</title>
 </head>
 
 <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+
     <div class="container">
         <div style="text-align:center">
             <h2>Contact Us</h2>
             <p>Swing by for a cup of coffee, or leave us a message:</p>
         </div>
+
         <div class="row">
             <div class="column">
                 <img src="Assets/Chop_shop logo.png" style="width:100%">
             </div>
+
             <div class="column">
                 <form action="/action_page.php">
                     <label for="fname">First Name</label>
