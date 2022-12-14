@@ -71,8 +71,9 @@ hr.half-width {
 }
 
 hr.counter-width {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+
 
 }
 
@@ -91,7 +92,7 @@ hr.new4 {
 
 .timetext {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: -40px;
     color: rgb(255, 0, 0)
 }
