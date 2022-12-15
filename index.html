@@ -38,8 +38,8 @@
                     <section class="middlegrid">
 
                         <!-- left Box -->
-                        <div
-                            style="background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow: 1px 2px #ececec;">
+                        <div style="background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow: 1px 2px #ececec;"
+                            class="leftrow">
 
                             <h1> QUICK LINKS</h1>
                             <br>
@@ -65,13 +65,13 @@
                             <br>
                         </div>
                         <!-- middle Box -->
-                        <div
-                            style="background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow: 1px 2px #ececec; ">
+                        <div style="background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow: 1px 2px #ececec;"
+                            class="middlerow ">
 
                         </div>
                         <!-- right Box -->
                         <div style=" background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow:
-                            1px 2px #ececec;">
+                            1px 2px #ececec;" class="rightrow">
                             <h1> TOP HEADLINES</h1>
                             <br>
                             <hr style="height:2px;border-width:0 ; color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)"
@@ -89,8 +89,8 @@
                         <div></div>
 
                         <!-- Timer Box -->
-                        <div
-                            style="background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow: 1px 2px #ececec;">
+                        <div style="background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow: 1px 2px #ececec;"
+                            class="timerbox">
 
                             <a href="">
                                 <img src="Assets/NASCAR_Camping_World_Truck_Series_logo.png" alt="Trucks Rules"
@@ -117,8 +117,35 @@
                             <p class="Timer" id="demo"></p>
 
                             <script>
+                                var getNextDay = function (dayName) {
+
+                                    // The current day
+                                    var date = new Date();
+                                    var now = date.getDay();
+
+                                    // Days of the week
+                                    var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+                                    // The index for the day you want
+                                    var day = days.indexOf(dayName.toLowerCase());
+
+                                    // Find the difference between the current day and the one you want
+                                    // If it's the same day as today (or a negative number), jump to the next week
+                                    var diff = day - now;
+                                    diff = diff < 1 ? 7 + diff : diff;
+
+                                    // Get the timestamp for the desired day
+                                    var nextDayTimestamp = date.getTime() + (1000 * 60 * 60 * 24 * diff);
+
+                                    // Get the next day
+                                    return new Date(nextDayTimestamp);
+
+                                };
+
+
                                 // Set the date we're counting down to
-                                var countDownDate = new Date("dec 20, 2022 19:30:").getTime();
+                                var countDownDate = getNextDay('tuesday').setHours(19, 30, 00);
+                                // var countDownDate = new Date("dec 20, 2022 19:30:").getTime();
 
                                 // Update the count down every 1 second
                                 var x = setInterval(function () {

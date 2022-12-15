@@ -41,10 +41,45 @@
 
 .middlegrid {
     display: grid;
-    grid-template-columns: 180px auto 280px;
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 15px;
+    width: 1150px;
 
 }
+
+
+/* old grid code down here */
+
+/* display: grid;
+    grid-template-columns: 180px auto 280px;
+    grid-gap: 20px; */
+
+
+.middlerow {
+    height: 600px;
+    grid-row: span 2;
+    width: 600px;
+}
+
+.leftrow {
+    height: 430px;
+    grid-row: span 2;
+    width: 180px;
+}
+
+.rightrow {
+    height: 430px;
+    grid-row: span 2;
+    width: 345px;
+}
+
+.timerbox {
+    height: 180px;
+    grid-row: span 2;
+    width: 345px;
+}
+
 
 a {
     text-decoration: none;
