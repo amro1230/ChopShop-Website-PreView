@@ -9,7 +9,7 @@
     <title>CHOPSHOP</title>
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+    <script src="timer.js"></script>
 
 
 
@@ -91,22 +91,23 @@
                         <!-- Timer Box -->
                         <div style="background:rgb(255, 255, 255); ;padding: 10px;border: 1px solid #ececec;box-shadow: 1px 2px #ececec;"
                             class="timerbox">
+                            <div style="text-align: center;">
+                                <button class="seriesbutton" id="truckpicbutton">
+                                    <img src="Assets/NASCAR_Camping_World_Truck_Series_logo.png" alt="Trucks "
+                                        style="width:80px;">
+                                </button>
 
-                            <a href="">
-                                <img src="Assets/NASCAR_Camping_World_Truck_Series_logo.png" alt="Trucks Rules"
-                                    style="width:80px;">
-                            </a>
+                                <button class="seriesbutton" id="xfinitypicbutton" onclick="xfinitybutton()">
+                                    <img src="Assets/NASCAR_Xfinity_Series_logo_2022.png" alt="Xfinity "
+                                        style="width:80px;">
 
-                            <a href="">
-                                <img src="Assets/NASCAR_Xfinity_Series_logo_2022.png" alt="Xfinity Rules"
-                                    style="width:80px;">
-                            </a>
+                                </button>
 
-                            <a href="">
-                                <img src="Assets/NASCAR_Cup_Series_logo.svg.png" alt="Cup Car Rules"
-                                    style="width:80px;">
-                            </a>
+                                <button class="seriesbutton" id="nextgenpicbutton">
+                                    <img src="Assets/NASCAR_Cup_Series_logo.svg.png" alt="Cup Car " style="width:80px;">
+                                </button>
 
+                            </div>
                             <p style="text-align:center">COUNTDOWN TO NEXT RACE</p>
 
 
@@ -114,68 +115,17 @@
                                 class=" counter-width">
 
 
-                            <p class="Timer" id="demo"></p>
+                            <p class="Timer" id="trucktimertext"></p>
+                            <p class="Timer" id="nextgentimertext"></p>
+                            <p class="Timer" id="xfinitytimertext"></p>
 
                             <script>
-                                var getNextDay = function (dayName) {
-
-                                    // The current day
-                                    var date = new Date();
-                                    var now = date.getDay();
-
-                                    // Days of the week
-                                    var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-
-                                    // The index for the day you want
-                                    var day = days.indexOf(dayName.toLowerCase());
-
-                                    // Find the difference between the current day and the one you want
-                                    // If it's the same day as today (or a negative number), jump to the next week
-                                    var diff = day - now;
-                                    diff = diff < 1 ? 7 + diff : diff;
-
-                                    // Get the timestamp for the desired day
-                                    var nextDayTimestamp = date.getTime() + (1000 * 60 * 60 * 24 * diff);
-
-                                    // Get the next day
-                                    return new Date(nextDayTimestamp);
-
-                                };
-
-
-                                // Set the date we're counting down to
-                                var countDownDate = getNextDay('tuesday').setHours(19, 30, 00);
-                                // var countDownDate = new Date("dec 20, 2022 19:30:").getTime();
-
-                                // Update the count down every 1 second
-                                var x = setInterval(function () {
-
-                                    // Get today's date and time
-                                    var now = new Date().getTime();
-
-                                    // Find the distance between now and the count down date
-                                    var distance = countDownDate - now;
-
-                                    // Time calculations for days, hours, minutes and seconds
-                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                                    // Output the result in an element with id="demo"
-                                    document.getElementById("demo").innerHTML = days + " " + hours + " "
-                                        + minutes + " " + seconds + " ";
-
-                                    // If the count down is over, write some text 
-                                    if (distance < 0) {
-                                        clearInterval(x);
-                                        document.getElementById("demo").innerHTML = "EXPIRED";
-                                    }
-                                }, 1000);
+                                trucktimer()
                             </script>
                             <br>
 
-                            <p class="timetext">Days HRS MINS SEC</p>
+                            <p class="timetext">DAYS HRS MINS SEC</p>
+
                         </div>
 
 
