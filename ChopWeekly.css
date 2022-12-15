@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Tisa Sans Pro Regular;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/Assets/Tisa\ Sans\ Pro\ Regular.woff");
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tisa Sans Pro Regular;
+
+}
+
+
+.Background2 {
+    max-width: 1500px;
+    margin: auto;
+    background: #ededed;
+    padding: 5px;
+    height: auto;
+}
+
+.Background {
+    background: #ededed;
+}
+
+.middlegrid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 0px;
+
+    width: 1150px;
+
+}
