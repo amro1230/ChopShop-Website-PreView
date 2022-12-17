@@ -31,7 +31,7 @@
 .middlegrid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(61px, auto);
     grid-gap: 0px;
     width: 1180px;
 

@@ -181,7 +181,6 @@ function xfinitytimer() {
 function xfinitybutton() {
     var xfinity_toshow = document.getElementById("xfinitytimertext")
     var nextgen_tohide = document.getElementById("nextgentimertext");
-
     var truck_tohide = document.getElementById("trucktimertext");
 
     if (nextgen_tohide.style.display != "none") {
@@ -199,4 +198,26 @@ function xfinitybutton() {
     document.getElementById("truckpicbutton").style.opacity = "30%";
     document.getElementById("nextgenpicbutton").style.opacity = "30%";
     xfinitytimer();
+}
+
+function nextgenbutton() {
+    var nextgen_toshow = document.getElementById("nextgentimertext")
+    var xfinity_tohide = document.getElementById("xfinitytimertext");
+    var truck_tohide = document.getElementById("trucktimertext");
+
+    if (xfinity_tohide.style.display != "none") {
+        xfinity_tohide.style.display = "none";
+
+    }
+    if (truck_tohide.style.display != "none") {
+        truck_tohide.style.display = "none";
+
+    }
+    if (nextgen_toshow.style.display == "none") {
+        nextgen_toshow.style.display = "block";
+
+    }
+    document.getElementById("truckpicbutton").style.opacity = "30%";
+    document.getElementById("xfinitypicbutton").style.opacity = "30%";
+    nextgentimer();
 }
