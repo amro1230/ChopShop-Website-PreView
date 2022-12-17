@@ -46,7 +46,7 @@ function trucktimer() {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
-        document.getElementById("trucktimertext").innerHTML = days + " " + hours + " "
+        document.getElementById("trucktimertext").innerHTML = days + "" + hours + " "
             + minutes + " " + seconds + " ";
 
         // If the count down is over, write some text 
@@ -195,8 +195,11 @@ function xfinitybutton() {
         xfinity_toshow.style.display = "block";
 
     }
+
+
     document.getElementById("truckpicbutton").style.opacity = "30%";
     document.getElementById("nextgenpicbutton").style.opacity = "30%";
+    document.getElementById("xfinitypicbutton").style.opacity = "100%";
     xfinitytimer();
 }
 
@@ -219,5 +222,29 @@ function nextgenbutton() {
     }
     document.getElementById("truckpicbutton").style.opacity = "30%";
     document.getElementById("xfinitypicbutton").style.opacity = "30%";
+    document.getElementById("nextgenpicbutton").style.opacity = "100%";
     nextgentimer();
+}
+
+function truckbutton() {
+    var truck_toshow = document.getElementById("trucktimertext")
+    var xfinity_tohide = document.getElementById("xfinitytimertext");
+    var nextgen_tohide = document.getElementById("nextgentimertext");
+
+    if (xfinity_tohide.style.display != "none") {
+        xfinity_tohide.style.display = "none";
+
+    }
+    if (nextgen_tohide.style.display != "none") {
+        nextgen_tohide.style.display = "none";
+
+    }
+    if (truck_toshow.style.display == "none") {
+        truck_toshow.style.display = "block";
+
+    }
+    document.getElementById("nextgenpicbutton").style.opacity = "30%";
+    document.getElementById("xfinitypicbutton").style.opacity = "30%";
+    document.getElementById("truckpicbutton").style.opacity = "100%";
+    trucktimer();
 }

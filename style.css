@@ -4,8 +4,17 @@
     font-weight: normal;
     src: url("/Assets/Tisa\ Sans\ Pro\ Regular.woff");
 
+
 }
 
+@font-face {
+    font-family: digital7;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/Assets/FONTS/digital7.ttf");
+
+
+}
 
 
 * {
@@ -120,6 +129,8 @@ hr.new4 {
     text-align: center;
     font-size: 60px;
     margin-top: 0px;
+    font-family: digital7;
+
 }
 
 
@@ -137,6 +148,19 @@ hr.new4 {
 }
 
 .seriesbutton:hover {
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.series2button {
+    border-style: none;
+    background: rgb(255, 255, 255);
+    opacity: 30%;
+    border: none;
+}
+
+.series2button:hover {
     color: white;
     transition-duration: 0.4s;
     cursor: pointer;
