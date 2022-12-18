@@ -8,10 +8,10 @@
 }
 
 @font-face {
-    font-family: digital7;
+    font-family: timer;
     font-style: normal;
     font-weight: normal;
-    src: url("/Assets/FONTS/digital7.ttf");
+    src: url("/Assets/FONTS/digital7\ \(mono\).ttf");
 
 
 }
@@ -129,16 +129,19 @@ hr.new4 {
     text-align: center;
     font-size: 60px;
     margin-top: 0px;
-    font-family: digital7;
+    font-family: timer;
 
 }
 
 
 .timetext {
-    text-align: center;
+    margin-left: 15px;
     font-size: 25px;
+    word-spacing: 20px;
     margin-top: -40px;
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
+
+
 }
 
 .seriesbutton {

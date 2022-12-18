@@ -40,14 +40,18 @@ function trucktimer() {
         var distance = countDownDate - now;
 
         // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, 0);
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, 0);
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, 0);
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, 0);
 
         // Output the result in an element with id="demo"
-        document.getElementById("trucktimertext").innerHTML = days + "" + hours + " "
+        document.getElementById("trucktimertext").innerHTML = days + " " + hours + " "
             + minutes + " " + seconds + " ";
+
+
+
+
 
         // If the count down is over, write some text 
         if (distance < 0) {
@@ -87,7 +91,7 @@ function nextgentimer() {
 
 
     // Set the date we're counting down to
-    var countDownDate = getNextDay('saturday').setHours(19, 30, 00);
+    var countDownDate = getNextDay('friday').setHours(19, 30, 00);
     // var countDownDate = new Date("dec 20, 2022 19:30:").getTime();
 
     // Update the count down every 1 second
@@ -100,10 +104,10 @@ function nextgentimer() {
         var distance = countDownDate - now;
 
         // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, 0);
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, 0);
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, 0);
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, 0);
 
         // Output the result in an element with id="demo"
         document.getElementById("nextgentimertext").innerHTML = days + " " + hours + " "
@@ -148,7 +152,7 @@ function xfinitytimer() {
 
 
     // Set the date we're counting down to
-    var countDownDate = getNextDay('friday').setHours(19, 30, 00);
+    var countDownDate = getNextDay('sunday').setHours(12, 00, 00);
     // var countDownDate = new Date("dec 20, 2022 19:30:").getTime();
 
     // Update the count down every 1 second
@@ -161,10 +165,11 @@ function xfinitytimer() {
         var distance = countDownDate - now;
 
         // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, 0);
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, 0);
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, 0);
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, 0);
+
 
         // Output the result in an element with id="demo"
         document.getElementById("xfinitytimertext").innerHTML = days + " " + hours + " "
