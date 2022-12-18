@@ -22,7 +22,7 @@
     margin: auto;
     background: #f9f8f8;
     padding: 5px;
-    height: 1350px;
+    height: 1000px;
 }
 
 .Background {
@@ -30,11 +30,13 @@
 }
 
 .middlegrid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(0px, auto);
     grid-gap: 0px;
+    text-align: center;
+    width: 1150px; */
 
-    width: 1150px;
+    text-align: center;
 
 }

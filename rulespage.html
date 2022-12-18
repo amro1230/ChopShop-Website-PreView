@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rules</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rules.css" />
 </head>
 
 <body>
@@ -25,27 +25,43 @@
     <!--end of Navigation bar-->
 
     <div class="Background">
-        <div class="home-page">
-            <div class="center">
+        <div class="Background2">
+            <section class="middlegrid">
 
-
+                <p style="font-size: 50px;font-style:bold; color: rgb(255, 0, 0);">Choose Rule Book</p>
                 <a href="Assets/Truck Series Rules.pdf-2022-10-30 2.44.4.pdf">
                     <img src="Assets/NASCAR_Camping_World_Truck_Series_logo.png" alt="Trucks Rules"
                         style="width:500px;">
                 </a>
 
                 <br>
+                <br>
+                <br>
                 <a href="Assets/ChopShop_Racing_Rules Next Gen And Xfinity.pdf">
                     <img src="Assets/NASCAR_Xfinity_Series_logo_2022.png" alt="Xfinity Rules" style="width:500px;">
                 </a>
                 <br>
+                <br>
+                <br>
                 <a href="Assets/ChopShop_Racing_Rules Next Gen And Xfinity.pdf">
                     <img src="Assets/NASCAR_Cup_Series_logo.svg.png" alt="Cup Car Rules" style="width:500px;">
                 </a>
-            </div>
+            </section>
+
         </div>
+
+    </div>
+    <!--Footer bar-->
+    <div id="Footer">
+
     </div>
 
+    <script>
+        $(function () {
+            $("#Footer").load("Footer.html");
+        });
+    </script>
+    <!--end of Footer bar-->
 </body>
 
 </html>

@@ -55,6 +55,10 @@ footer {
 
 }
 
+.socials:hover {
+    cursor: pointer;
+}
+
 .socials li {
     margin: 0 10px;
 }
