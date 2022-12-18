@@ -17,14 +17,7 @@
 
 .grid-template-areas {
     display: grid;
-    /* position: sticky;
-    top: 0; */
     grid-template-columns: auto auto auto;
-    /* grid-template:
-        'nav1 nav2 nav3' auto */
-    /* gap: 1000px; */
-
-
 }
 
 
