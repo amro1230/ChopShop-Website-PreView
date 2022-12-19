@@ -5,20 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Standings</title>
+    <link rel="stylesheet" href="rules.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div class="Background">
-        <div class="home-page">
 
-            <embed type="text/html" src="https://www.simracerhub.com/scoring/season_standings.php?season_id=16516"
-                width="1080" height="2000">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
 
-        </div>
     </div>
 
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="Background">
+        <div class="Background2">
+            <section class="middlegrid">
+
+                <p style="font-size: 50px;font-style:bold; color: rgb(255, 0, 0);">Choose Standings Page</p>
+
+                <a href="/">
+                    <img src="Assets/NASCAR_Camping_World_Truck_Series_logo.png" alt="Trucks Standings"
+                        style="width:500px;">
+                </a>
+                <br>
+                <br>
+                <br>
+                <a href="/">
+                    <img src="Assets/NASCAR_Xfinity_Series_logo_2022.png" alt="Xfinity Standings" style="width:500px;">
+                </a>
+                <br>
+                <br>
+                <br>
+                <a href="/">
+                    <img src="Assets/NASCAR_Cup_Series_logo.svg.png" alt="Nextgen Standings" style="width:500px;">
+                </a>
+            </section>
+
+        </div>
+
+    </div>
+    <!--Footer bar-->
+    <div id="Footer">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#Footer").load("Footer.html");
+        });
+    </script>
+    <!--end of Footer bar-->
 </body>
 
 </html>
+
+
+<!-- 
+
+
+<div class="Background">
+    <div class="home-page">
+
+        NextGen Standings Link
+        <embed type="text/html" src="https://www.simracerhub.com/scoring/season_standings.php?season_id=16516"
+            width="1080" height="2000">
+
+    </div>
+</div> -->
