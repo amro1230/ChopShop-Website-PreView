@@ -63,7 +63,9 @@ input[type=submit]:hover {
     }
 }
 
-button {
+
+
+.sendbutton {
     border: 0px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -71,11 +73,13 @@ button {
     padding: 10px;
     border-radius: 10px;
     width: 100px;
+
 }
 
-button:hover {
+
+.sendbutton:hover {
     background-color: #00ffb3;
-    color: rgb(0, 0, 0);
+    color: white;
     transition-duration: 0.4s;
     cursor: pointer;
 }
