@@ -55,6 +55,17 @@ footer {
 
 }
 
+.sponsers {
+    /* list-style: none; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: left;
+    float: left;
+    /* margin: -6rem 0 0.3rem 0; */
+
+
+}
+
 .socials:hover {
     cursor: pointer;
 }
