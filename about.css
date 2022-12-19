@@ -11,3 +11,15 @@
     margin-right: auto;
     width: max-content;
 }
+
+h3 {
+    color: rgb(214, 29, 29);
+    text-align: center;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    padding: 10px;
+    height: 250px
+}
