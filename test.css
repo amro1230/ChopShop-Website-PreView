@@ -42,7 +42,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    height: 2000px;
+    height: auto;
     width: 1160px;
 
 }
@@ -51,6 +51,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin-right: 17px;
     /* background-color: rgb(255, 30, 30); */
 }
 
@@ -77,6 +78,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin-left: 14px;
 
     /* background-color: rgb(255, 30, 30); */
 }
