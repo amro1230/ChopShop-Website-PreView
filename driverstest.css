@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Tisa Sans Pro Regular;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/Assets/Tisa\ Sans\ Pro\ Regular.woff");
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tisa Sans Pro Regular;
+
+}
+
+.Background2 {
+    max-width: 1180px;
+    margin: auto;
+    background: #ededed;
+    padding: 0px;
+    height: 1500px;
+}
+
+
+.flex-bigcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 2000px;
+    width: 1160px;
+
+}
+
+.whitebox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.greybox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: #e6e6e6;
+}
