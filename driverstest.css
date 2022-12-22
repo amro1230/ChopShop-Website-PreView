@@ -8,10 +8,19 @@
 }
 
 @font-face {
-    font-family: Meutas;
+    font-family: Meutasextrabold;
     font-style: normal;
     font-weight: normal;
     src: url("/Assets/FONTS/Meutas-ExtraBold.otf");
+
+
+}
+
+@font-face {
+    font-family: Meutasbold;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/Assets/FONTS/Meutas-UltraLight.otf");
 
 
 }
@@ -141,4 +150,24 @@
 
 }
 
-.drivernumber
+.drivernumber {
+    font-family: Benzin;
+    color: #39393b;
+    font-size: 45px;
+
+}
+
+.drivername {
+    font-family: Meutasbold;
+    color: #39393b;
+    font-size: 20px;
+    float: left;
+
+}
+
+sup {
+    font-family: Meutasextrabold;
+    color: #39393b;
+    font-size: 40px;
+
+}
