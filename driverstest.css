@@ -90,20 +90,46 @@
 }
 
 
-.whitebox>p {
+.number {
+    margin-left: 70px;
     margin: auto;
+    display: inline-block;
+    width: 280px;
+
+}
+
+.name {
+    padding-right: 250px;
+    /* margin-left: 80px; */
+    width: 400px;
 
 }
 
 .img1 {
     margin-left: 20px;
+    padding-top: 10px;
+
 
 }
 
 .img2 {
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 100px;
+    margin: auto;
+    width: 80px;
 }
+
+.img3 {
+    margin: auto;
+    margin-right: 60px;
+    width: 70px;
+}
+
+.img4 {
+    margin: auto;
+    margin-right: 60px;
+    width: 70px;
+}
+
 
 .greybox {
     display: flex;
@@ -141,14 +167,11 @@
 
 #driverpic {
     width: 100px;
-    height: 90px
+    height: 100px;
+    object-fit: cover;
 }
 
-#cartype {
-    width: 100px;
-    height: 50px;
 
-}
 
 .drivernumber {
     font-family: Benzin;
@@ -161,13 +184,18 @@
     font-family: Meutasbold;
     color: #39393b;
     font-size: 20px;
-    float: left;
-
+    text-align: left;
+    width: 100px
 }
 
 sup {
     font-family: Meutasextrabold;
     color: #39393b;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.namegap {
+    line-height: 30px;
+    margin: auto;
 
 }
