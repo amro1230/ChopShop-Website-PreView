@@ -105,18 +105,15 @@
 
 }
 
-.img1 {
-    margin-left: 20px;
-    padding-top: 10px;
 
-
-}
 
 .img2 {
     margin-right: 100px;
     margin: auto;
     width: 80px;
 }
+
+
 
 .img3 {
     margin: auto;
@@ -169,6 +166,27 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
+    margin-left: 20px;
+    padding-top: 10px;
+
+}
+
+#driverpic:hover {
+    animation: loop-img 1.5s infinite;
+}
+
+@keyframes loop-img {
+
+    50% {
+        width: 120px;
+        height: 180px;
+    }
+
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 
